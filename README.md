@@ -31,7 +31,7 @@ exports.foo = (bar) => {
 ```
 or using module.exports:
 ```
-function foo(bar){
+function foo(bar) {
   console.log(bar);
 }
 
