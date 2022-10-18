@@ -12,7 +12,8 @@ Based on "CommonJS vs. ES Modules: Modules and Imports in NodeJS" at https://ref
 Importing modules with CommonJS:
 
 ```
-const foo = require("foo");
+const foo = require("foo"); // a node module, found in node_modules
+const dow = require("./dow"); // a local file, dow.js
 ```
 
 Exporting modules with CommonJS:
