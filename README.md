@@ -9,7 +9,7 @@ Based on "CommonJS vs. ES Modules: Modules and Imports in NodeJS" at https://ref
 
 *CommonJS*: The Default NodeJS Module System has been CommonJS
 
-Importing modules with CommonJS:
+**Importing** modules with CommonJS:
 
 ```
 const foo = require("foo"); // a node module, found in node_modules
@@ -21,7 +21,16 @@ const * as foo = require("foo"); // a node module, found in node_modules
 const { dow } = require("./dow"); // a local file, dow.js
 ```
 
-Exporting modules with CommonJS:
+We can also import variables and/or classes:
+
+```
+const Logger = require("./logger");
+
+Logger.info(`${logger.defaultMessage} printed in blue`);
+Logger.error("some error message printed in red");
+```
+
+**Exporting** modules with CommonJS:
 
 ```
 exports.foo = function (bar) {
@@ -43,7 +52,30 @@ function internalFoo(bar) {
 module.exports {
     foo: internalFoo,
     ...
+};
+```
+
+We can also export variables and/or classes:
+
+```
+const defaultMessage = "Hello World";
+
+class Logger {
+  static defaultMessage = "Hello World";
+
+  static info(message) {
+    console.log(chalk.blue(message));
+  }
+
+  static error(message) {
+    console.log(chalk.red(message));
+  }
 }
+
+module.exports = {
+  Logger,
+  defaultMessage
+};
 ```
 
 **THE BETTER WAY IS USING ES MODULES**
