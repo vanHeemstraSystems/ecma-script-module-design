@@ -22,6 +22,12 @@ exports.foo = function (bar) {
     console.log(bar);
 };
 ```
+or when using arrow functions:
+```
+exports.foo = (bar) => {
+    console.log(bar);
+};
+```
 
 **THE BETTER WAY IS USING ES MODULES**
 
