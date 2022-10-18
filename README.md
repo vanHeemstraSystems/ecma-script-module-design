@@ -15,6 +15,11 @@ Importing modules with CommonJS:
 const foo = require("foo"); // a node module, found in node_modules
 const dow = require("./dow"); // a local file, dow.js
 ```
+or importing only specific functions:
+```
+const * as foo = require("foo"); // a node module, found in node_modules
+const { dow } = require("./dow"); // a local file, dow.js
+```
 
 Exporting modules with CommonJS:
 
