@@ -4,3 +4,18 @@ ecma-script-module-design
 Based on "ES modules: A cartoon deep-dive" at https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
 
 ## 100 - Introduction
+
+Based on "CommonJS vs. ES Modules: Modules and Imports in NodeJS" at https://reflectoring.io/nodejs-modules-imports/
+
+*CommonJS*: The Default NodeJS Module System has been CommonJS
+
+Importing modules withCommonJS:
+
+```
+const http = require("http");
+```
+
+**THE BETTER WAY IS USING ES MODULES**
+
+*ES Module*: 
+
