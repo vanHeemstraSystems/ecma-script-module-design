@@ -31,12 +31,13 @@ exports.foo = (bar) => {
 ```
 or using module.exports:
 ```
-function foo(bar) {
+function internalFoo(bar) {
   console.log(bar);
 }
 
 module.exports {
-    foo
+    foo: internalFoo,
+    ...
 }
 ```
 
