@@ -79,6 +79,7 @@ module.exports = {
 ```
 
 **THE BETTER WAY IS USING ES MODULES**
+supported in Node since version 14
 
 *ES Module*: 
 
