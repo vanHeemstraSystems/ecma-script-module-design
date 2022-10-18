@@ -20,14 +20,25 @@ Exporting modules with CommonJS:
 
 ```
 exports.foo = function (bar) {
-    console.log(bar);
+  console.log(bar);
 };
 ```
 or when using arrow functions:
 ```
 exports.foo = (bar) => {
-    console.log(bar);
+  console.log(bar);
 };
+```
+or using module.exports:
+```
+function foo(bar){
+  console.log(bar);
+}
+
+module.exports {
+    foo
+}
+```
 ```
 
 **THE BETTER WAY IS USING ES MODULES**
