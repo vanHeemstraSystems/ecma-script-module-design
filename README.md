@@ -81,5 +81,27 @@ module.exports = {
 **THE BETTER WAY IS USING ES MODULES**
 supported in Node since version 14
 
-*ES Module*: 
+*ES Module*: The Default JavaScript Module System is ECMAScript (ES) Module
+
+**Importing** modules with ES Module:
+
+```
+
+```
+
+**Exporting** modules with ES Module:
+
+```
+export class Logger {
+  static defaultMessage = "Hello World";
+
+  static info(message) {
+    console.log(chalk.blue(message));
+  }
+
+  static error(message) {
+    console.log(chalk.red(message));
+  }
+}
+```
 
