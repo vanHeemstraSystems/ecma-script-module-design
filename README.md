@@ -9,10 +9,18 @@ Based on "CommonJS vs. ES Modules: Modules and Imports in NodeJS" at https://ref
 
 *CommonJS*: The Default NodeJS Module System has been CommonJS
 
-Importing modules withCommonJS:
+Importing modules with CommonJS:
 
 ```
-const http = require("http");
+const foo = require("foo");
+```
+
+Exporting modules with CommonJS:
+
+```
+exports.foo = function (bar) {
+    console.log(bar);
+};
 ```
 
 **THE BETTER WAY IS USING ES MODULES**
