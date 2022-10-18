@@ -86,7 +86,7 @@ supported in Node since version 14
 **Importing** modules with ES Module:
 
 ```
-
+import { Logger } from "./logger.mjs"; // NOTE: .mjs extension instead of .js
 ```
 
 **Exporting** modules with ES Module:
