@@ -39,7 +39,6 @@ module.exports {
     foo
 }
 ```
-```
 
 **THE BETTER WAY IS USING ES MODULES**
 
