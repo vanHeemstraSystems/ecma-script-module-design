@@ -105,3 +105,6 @@ export class Logger {
 }
 ```
 
+By default, files with the **.js** extension will be treated as **CommonJS modules**, while files with the **.mjs** extension are treated as **ES Modules**.
+
+ES Modules can import CommonJS modules, but CommonJS modules **cannot** import ES Modules.
